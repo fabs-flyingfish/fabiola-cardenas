@@ -1313,6 +1313,15 @@ body.cursor-view .cursor-label {
 .modal-success__desc {
   font-size: 16px;
   color: rgba(247, 254, 255, 0.5);
+  margin-bottom: 40px;
+}
+
+#contact-modal.success-state .modal-header {
+  display: none;
+}
+
+#contact-modal.success-state .modal-form {
+  display: none;
 }
 
 /* MOBILE */
