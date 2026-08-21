@@ -726,3 +726,12 @@ if (modalForm) {
         // Log the actual response for debugging
         console.error('Form submission failed:', response.status, response.statusText);
         throw new Error('Submission failed');
+      }
+    } catch (err) {
+      console.error('Form error:', err);
+      submitBtn.textContent = 'Send it';
+      submitBtn.disabled = false;
+      alert('Something went wrong. Please try emailing me directly at hifabiolacardenas@gmail.com');
+    }
+  });
+}
