@@ -674,6 +674,12 @@ function closeModal() {
   }
 }
 
+// Close button inside success state
+const successCloseBtn = document.querySelector('.modal-success__close');
+if (successCloseBtn) {
+  successCloseBtn.addEventListener('click', closeModal);
+}
+
 // Open modal on any element with data-open-modal
 document.querySelectorAll('[data-open-modal]').forEach(trigger => {
   trigger.addEventListener('click', (e) => {
