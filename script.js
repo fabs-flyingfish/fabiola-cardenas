@@ -706,23 +706,23 @@ if (modalForm) {
 
     const formData = new FormData(modalForm);
 
+    // Manually encode to ensure form-name is included
+    const encoded = new URLSearchParams();
+    for (const [key, value] of formData.entries()) {
+      encoded.append(key, value);
+    }
+
     try {
       const response = await fetch('/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(formData).toString()
+        body: encoded.toString()
       });
 
       if (response.ok) {
         modalForm.setAttribute('hidden', '');
         modalSuccess.removeAttribute('hidden');
       } else {
+        // Log the actual response for debugging
+        console.error('Form submission failed:', response.status, response.statusText);
         throw new Error('Submission failed');
-      }
-    } catch (err) {
-      submitBtn.textContent = 'Send it';
-      submitBtn.disabled = false;
-      alert('Something went wrong. Please try emailing me directly at hifabiolacardenas@gmail.com');
-    }
-  });
-}
