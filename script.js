@@ -658,6 +658,7 @@ function openModal() {
 function closeModal() {
   contactModal.setAttribute('hidden', '');
   document.body.style.overflow = '';
+  contactModal.classList.remove('success-state');
 
   // Reset form to initial state
   if (modalForm) {
@@ -726,7 +727,7 @@ if (modalForm) {
       });
 
       if (response.ok) {
-        modalForm.style.display = 'none';
+        contactModal.classList.add('success-state');
         modalSuccess.removeAttribute('hidden');
       } else {
         // Log the actual response for debugging
