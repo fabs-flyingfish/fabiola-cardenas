@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Biffa Ecommerce — Fabiola Cardenas</title>
+  <meta name="description" content="Optimising the ecommerce conversion journey for Biffa. A UX case study by Fabiola Cardenas." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700;800;900&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="case-study.css" />
+</head>
+<body>
+
+  <div id="cursor" aria-hidden="true">
+    <span class="cursor-label">View</span>
+  </div>
+
+  <!-- NAV -->
+  <nav id="nav" role="navigation" aria-label="Main navigation">
+    <a href="/" class="nav-logo" aria-label="Fabiola Cardenas home">
+      <img src="../images/logo/fabs_logo.svg" alt="FC logo" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'" />
+      <span class="nav-logo-fallback">FC</span>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="/#work">Work</a></li>
+      <li><a href="/#about">About</a></li>
+      <li><a href="/#writing">Writing</a></li>
+    </ul>
+    <button class="btn btn-green nav-cta" data-open-modal aria-haspopup="dialog">Get in touch</button>
+    <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div id="mobile-menu" hidden>
+    <ul>
+      <li><a href="/#work">Work</a></li>
+      <li><a href="/#about">About</a></li>
+      <li><a href="/#writing">Writing</a></li>
+      <li><a href="/#contact">Get in touch</a></li>
+    </ul>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="cs-hero" aria-label="Project hero">
+      <div class="cs-hero__bg">
+        <img src="images/Hero.png" alt="" aria-hidden="true" class="cs-hero__img" />
+        <div class="cs-hero__overlay"></div>
+      </div>
+      <div class="cs-hero__content container">
+        <div class="cs-hero__meta">
+          <span class="cs-tag">UX</span>
+          <span class="cs-tag">Strategy</span>
+          <span class="cs-tag">Experience</span>
+          <span class="cs-tag">Optimising</span>
+        </div>
+        <h1 class="cs-hero__title">Optimising<br>conversion</h1>
+        <p class="cs-hero__client">Biffa</p>
+      </div>
+      <div class="cs-hero__scroll" aria-hidden="true">
+        <div class="scroll-track"><div class="scroll-dot"></div></div>
+      </div>
+    </section>
+
+    <!-- OVERVIEW STRIP -->
+    <section class="cs-overview" aria-label="Project overview">
+      <div class="container cs-overview__inner">
+        <div class="cs-overview__item">
+          <span class="cs-overview__label">Client</span>
+          <span class="cs-overview__value">Biffa</span>
+        </div>
+        <div class="cs-overview__item">
+          <span class="cs-overview__label">Type</span>
+          <span class="cs-overview__value">Retainer Engagement</span>
+        </div>
+        <div class="cs-overview__item">
+          <span class="cs-overview__label">Role</span>
+          <span class="cs-overview__value">Lead Product Designer</span>
+        </div>
+        <div class="cs-overview__item">
+          <span class="cs-overview__label">Disciplines</span>
+          <span class="cs-overview__value">UX, Strategy, Experience Design</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- THE PROBLEM -->
+    <section class="cs-section" aria-label="The problem">
+      <div class="container cs-two-col">
+        <div class="cs-two-col__left">
+          <span class="section-label">The Problem</span>
+        </div>
+        <div class="cs-two-col__right">
+          <p class="cs-pullquote">All users were hitting unnecessary friction before the basket.</p>
+          <p class="cs-body">Regardless of whether it was relevant to them, every user was asked to input their business sector before reaching the basket. For non-business users this created a barrier at the most critical point in the journey.</p>
+        </div>
+      </div>
+
+      <div class="cs-divider"></div>
+
+      <div class="container cs-two-col">
+        <div class="cs-two-col__left">
+          <span class="section-label">The Hypothesis</span>
+        </div>
+        <div class="cs-two-col__right">
+          <p class="cs-body">Moving the sector field behind a conditional step, only surfacing it for users who identified as a business, would remove the barrier entirely for everyone else and increase conversion.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FULL BLEED IMAGE -->
+    <div class="cs-full-bleed">
+      <img src="images/img-1.png" alt="Biffa research and discovery work" class="cs-full-bleed__img" />
+    </div>
+
+    <!-- WHAT WE DID -->
+    <section class="cs-section cs-section--dark" aria-label="What we did">
+      <div class="container cs-two-col">
+        <div class="cs-two-col__left">
+          <span class="section-label cs-section-label--light">What We Did</span>
+        </div>
+        <div class="cs-two-col__right">
+          <p class="cs-body cs-body--light">We mapped the full journey end to end, working closely with engineering on the backend logic and validating the approach with stakeholders from a sales feasibility perspective.</p>
+          <p class="cs-body cs-body--light">We designed two distinct paths from a single upfront question. One important design decision we fought for was ensuring non-business users, who can't order online and need to call, were still shown their price before being redirected rather than hitting a dead end.</p>
+          <p class="cs-body cs-body--light">After four months of A/B testing the results were clear.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- IMAGE GRID -->
+    <div class="cs-image-grid">
+      <img src="images/img-2.png" alt="Biffa design work" class="cs-image-grid__img" />
+      <img src="images/img-3.png" alt="Biffa prototype" class="cs-image-grid__img" />
+    </div>
+
+    <!-- FULL BLEED IMAGE 2 -->
+    <div class="cs-full-bleed">
+      <img src="images/img-4.png" alt="Biffa final designs" class="cs-full-bleed__img" />
+    </div>
+
+    <!-- RESULTS -->
+    <section class="cs-results" aria-label="Results">
+      <div class="container">
+        <span class="section-label cs-section-label--light">Early Results</span>
+        <p class="cs-results__intro">After four months of A/B testing, moving the sector field behind a conditional step delivered a measurable impact on Biffa's bottom line.</p>
+        <div class="cs-stats">
+          <div class="cs-stat">
+            <span class="cs-stat__number">38.66%</span>
+            <span class="cs-stat__label">Uplift in orders</span>
+          </div>
+          <div class="cs-stat">
+            <span class="cs-stat__number">£436K</span>
+            <span class="cs-stat__label">Annualised estimated benefit</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEXT CASE STUDY -->
+    <section class="cs-next" aria-label="Next case study">
+      <a href="honda/index.html" class="cs-next__link">
+        <div class="cs-next__bg">
+          <img src="../honda/images/img-1.png" alt="" aria-hidden="true" class="cs-next__img" />
+          <div class="cs-next__overlay"></div>
+        </div>
+        <div class="cs-next__content">
+          <span class="section-label cs-section-label--light">Next Case Study</span>
+          <h2 class="cs-next__title">Honda</h2>
+          <span class="btn btn-outline-light">View case study</span>
+        </div>
+      </a>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="footer" role="contentinfo">
+    <div class="footer-inner">
+      <a href="/" class="footer-logo" aria-label="Fabiola Cardenas home">
+        <img src="../images/logo/fabs_logo.svg" alt="FC logo" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'" />
+        <span class="nav-logo-fallback">FC</span>
+      </a>
+      <p class="footer-tagline">Let's build something that works for everyone.</p>
+      <div class="footer-links">
+        <a href="https://uk.linkedin.com/in/fabiola-cardenas" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:hifabiolacardenas@gmail.com">hifabiolacardenas@gmail.com</a>
+      </div>
+      <p class="footer-copy">&copy; <span id="year"></span> Fabiola Cardenas</p>
+    </div>
+  </footer>
+
+  <!-- CONTACT MODAL -->
+  <div id="contact-modal" class="modal" aria-modal="true" aria-label="Contact Fabiola" role="dialog" hidden>
+    <div class="modal-overlay" aria-hidden="true"></div>
+    <div class="modal-inner">
+      <button class="modal-close" aria-label="Close contact form" type="button">
+        <span></span><span></span>
+      </button>
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="section-label modal-label">Contact</span>
+          <h2 class="modal-headline">Let's chat!</h2>
+          <p class="modal-subline">Drop me a message and I'll get back to you.</p>
+        </div>
+        <form class="modal-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact" />
+          <p hidden><label>Don't fill this out: <input name="bot-field" /></label></p>
+          <div class="form-group">
+            <label for="modal-name" class="form-label">Name</label>
+            <input type="text" id="modal-name" name="name" class="form-input" placeholder="Your name" required autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="modal-email" class="form-label">Email</label>
+            <input type="email" id="modal-email" name="email" class="form-input" placeholder="your@email.com" required autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label for="modal-message" class="form-label">Message</label>
+            <textarea id="modal-message" name="message" class="form-input form-textarea" placeholder="Tell me about your project..." required rows="5"></textarea>
+          </div>
+          <button type="submit" class="btn btn-green btn-large modal-submit">Send it</button>
+        </form>
+        <div class="modal-success" hidden>
+          <div class="modal-success__icon" aria-hidden="true">✓</div>
+          <h3 class="modal-success__title">Message sent!</h3>
+          <p class="modal-success__desc">Thanks for reaching out. I'll get back to you soon.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../script.js"></script>
+  <script src="case-study.js"></script>
+</body>
+</html>
