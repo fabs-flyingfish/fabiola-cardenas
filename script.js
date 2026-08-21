@@ -661,7 +661,7 @@ function closeModal() {
 
   // Reset form to initial state
   if (modalForm) {
-    modalForm.removeAttribute('hidden');
+    modalForm.style.display = '';
     modalForm.reset();
     const submitBtn = modalForm.querySelector('.modal-submit');
     if (submitBtn) {
@@ -726,7 +726,7 @@ if (modalForm) {
       });
 
       if (response.ok) {
-        modalForm.setAttribute('hidden', '');
+        modalForm.style.display = 'none';
         modalSuccess.removeAttribute('hidden');
       } else {
         // Log the actual response for debugging
